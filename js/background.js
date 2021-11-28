@@ -10,7 +10,7 @@ const images = [
 const chosenImage = images[Math.floor(Math.random() * images.length)]; //qoutes와 동일.
 
 //경로생성
-bgimageroot = `img/${chosenImage}` //태그요소객체의 src프로퍼티에 이미지의 주소를 추가한다.
+bgimageroot = `Img/${chosenImage}` //태그요소객체의 src프로퍼티에 이미지의 주소를 추가한다.
 
 
 //content객체에 background이미지 배정
