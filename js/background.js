@@ -16,7 +16,7 @@ bgimageroot = `img/${chosenImage}` //태그요소객체의 src프로퍼티에 �
 //content객체에 background이미지 배정
 const content = document.querySelector('body')
 // interest cohort문제가 생겨서 base url을 추가했습니다.
-content.style.backgroundImage = "url(" + "https://koreanddinghwan.github.io/vanilachallenge/" + bgimageroot + ")";
+content.style.backgroundImage = "url(" + bgimageroot + ")";
 
 // gs://fir-test-88ccc.appspot.com/img/1.jpg
 // https://firebasestorage.googleapis.com/v0/b/fir-test-88ccc.appspot.com/o/img%2F3.jpg?alt=media&token=90b900d6-b3f5-451b-b343-e69c3eee1e6b
