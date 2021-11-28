@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/sytle.css"/>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/greetings.js"></script> 
+    <script defer src="js/clock.js"> </script>   
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/background.js"></script>
+    <script defer src="js/todo.js"></script>
+  
+    <div id="weather" class="font_shadow">
+        <span></span>
+        <span></span>
+    </div>  
+    
+    
+    <div>
+        <h2 class="clock font_shadow fontxl">00:00:00</h2>
+    </div>
+
+    <div class='content'>
+    
+
+    <div class="login-form">
+        <form class="hidden font_shadow" id="login-form">
+            <input 
+                required
+                maxlength="15"
+                type="text" 
+                placeholder="💻What is your name?">
+            
+            <button class="font_shadow">Log In</button>
+        </form>
+    </div>
+
+    <div class="greeting">
+        <h1 id="greeting" class='hidden font_shadow'></h1>
+    </div>
+    
+    <div class="todocontent hidden">
+        <div class="todoform">
+                <form id="todo-form">
+                    <input type="text" placeholder="Write a To Do And Press Enter ⏎">
+                </form>
+        </div>
+        <div>
+            <ul id="todo-list">
+            </ul>
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="quotecontainer">
+        <div id="quote" class="font_shadow">
+            <span class='quote'></span>
+            <br>
+            <span class='author'></span>
+        </div>
+    </div>
+        
+
+
+  
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyCDnBx9MJD-qr4dVMZ7Xa66vU9przRVONg",
+        authDomain: "fir-test-88ccc.firebaseapp.com",
+        databaseURL: "https://fir-test-88ccc-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "fir-test-88ccc",
+        storageBucket: "fir-test-88ccc.appspot.com",
+        messagingSenderId: "807035202114",
+        appId: "1:807035202114:web:698a8be697bede506e1bdb"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+</body>
+</html>
